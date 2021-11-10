@@ -7,22 +7,22 @@ export default StyleSheet.create({
     justifyContent: "center",
     backgroundColor: "white",
   },
-  logout: {
-    display: "flex",
+button: {
     justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "gray",
     height: 40,
     marginTop: 50,
     borderRadius: 5,
     paddingLeft: 20,
     paddingRight: 20,
+    elevation: 10,
+    width:150,
   },
-  buttonText: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    color: "white",
-    padding: 5,
+  
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: '100%',
   },
 });

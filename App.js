@@ -19,12 +19,10 @@ import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 
 const theme = {
   ...DefaultTheme,
-  dark:true,
-  roundness: 50,
   colors: {
     ...DefaultTheme.colors,
-    primary: '#fc7f19',
-    accent: '#fc7f19',
+    primary: '#e05c10',
+    text:'white'
   },
 };
 

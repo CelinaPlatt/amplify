@@ -1,28 +1,28 @@
-import { Video } from "expo-av";
-import React, { useState } from "react";
-import { Image } from "react-native";
-import { Button, StyleSheet, Text, View, TextInput } from "react-native";
-import { uploadAd } from "../dbInteraction";
-import loadingIcon from "../../../images/loading.gif";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { Video } from 'expo-av';
+import React, { useState } from 'react';
+import { Image } from 'react-native';
+import { Button, StyleSheet, Text, View, TextInput } from 'react-native';
+import { uploadAd } from '../dbInteraction';
+import loadingIcon from '../../../images/loading.gif';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 const Form = ({ navigation, media, setMedia, user }) => {
-  const [title, setTitle] = useState("");
-  const [body, setBody] = useState("");
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
   const [uploadingAd, setUploadingAd] = useState(false);
   const [error, setError] = useState(false);
 
   const navigateToCapture = () => {
     setMedia({ type: null, uri: null });
-    navigation.navigate("Capture");
+    navigation.navigate('Capture');
   };
 
   const mediaPlaceholder = () => {
-    if (media.type === "photo") {
+    if (media.type === 'photo') {
       return (
         <Image source={{ uri: media.uri }} style={styles.mediaPlaceholder} />
       );
-    } else if (media.type === "video") {
+    } else if (media.type === 'video') {
       return (
         <Video
           source={{ uri: media.uri }}
@@ -51,7 +51,7 @@ const Form = ({ navigation, media, setMedia, user }) => {
   return (
     //Checks if any media is being held and displays the correct component
     <KeyboardAwareScrollView
-      style={{ backgroundColor: "#4c69a5" }}
+      style={{ backgroundColor: '#4c69a5' }}
       resetScrollToCoords={{ x: 0, y: 0 }}
       contentContainerStyle={styles.formContainer}
       scrollEnabled={true}
@@ -62,7 +62,7 @@ const Form = ({ navigation, media, setMedia, user }) => {
 
       <Button
         onPress={navigateToCapture}
-        title={media.uri ? "Change Photo/Video" : "Add Photo/Video"}
+        title={media.uri ? 'Change Photo/Video' : 'Add Photo/Video'}
       />
       <TextInput
         placeholder="Title.."
@@ -83,7 +83,7 @@ const Form = ({ navigation, media, setMedia, user }) => {
         onPress={() => {
           uploadAd(setUploadingAd, title, body, media, setError, user);
         }}
-        title={uploadingAd ? "Uploading.." : "Upload Ad"}
+        title={uploadingAd ? 'Uploading..' : 'Upload Ad'}
       />
     </KeyboardAwareScrollView>
   );
@@ -94,33 +94,33 @@ export default Form;
 const styles = StyleSheet.create({
   formContainer: {
     flex: 1,
-    height: "100%",
+    height: '100%',
     // width: "100%",
-    backgroundColor: "white",
+    backgroundColor: 'white',
     // justifyContent: "space-between",
   },
   mediaPlaceholder: {
-    height: "60%",
-    width: "100%",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#ededed",
+    height: '60%',
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ededed',
   },
   error: {
     fontSize: 10,
-    color: "red",
+    color: 'red',
   },
   formInput: {
-    textAlign: "center",
-    backgroundColor: "#ededed",
+    textAlign: 'center',
+    backgroundColor: '#ededed',
     height: 50,
     marginTop: 5,
     fontSize: 22,
   },
   uploadingContainer: {
-    height: "100%",
-    width: "100%",
-    justifyContent: "center",
-    alignItems: "center",
+    height: '100%',
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
