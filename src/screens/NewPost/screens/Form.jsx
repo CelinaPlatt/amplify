@@ -1,8 +1,8 @@
 import { Video } from "expo-av";
 import React, { useState } from "react";
 import { Image } from "react-native";
-import { StyleSheet, Text, View, TextInput } from "react-native";
-import { Button } from "react-native-paper";
+import { StyleSheet, View } from "react-native";
+import { Button , TextInput, Text} from "react-native-paper";
 import { uploadAd } from "../dbInteraction";
 import loadingIcon from "../../../images/loading.gif";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     backgroundColor: "#302f2f",
     color: "white",
-    height: 50,
+    height: 40,
     fontSize: 22,
     borderBottomColor: "#e05c10",
     borderBottomWidth: 4,
@@ -160,6 +160,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   bottomMargin: {
-    marginBottom: 10,
+    marginBottom: 8,
   },
 });
