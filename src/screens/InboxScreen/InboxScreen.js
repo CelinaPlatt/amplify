@@ -16,14 +16,11 @@ export default function InboxScreen({
   messagesObject,
 }) {
   const Stack = createStackNavigator();
-  // console.log(user, "<<<in inbox");
 
   return (
     <View
       style={{
         flex: 1,
-
-        // backgroundColor: "#fff",
         headerStyle: { backgroundColor: "pink" },
       }}
     >
@@ -31,8 +28,8 @@ export default function InboxScreen({
         <Stack.Screen
           name="Chats"
           options={{
-            headerStyle: { backgroundColor: "#252525" },
-            headerTitleStyle: { color: "white" },
+            headerStyle: { backgroundColor: "#363636" },
+            headerTitleStyle: { color: "#FEF4EC" },
           }}
         >
           {(props) => (
@@ -48,8 +45,9 @@ export default function InboxScreen({
           name="SingleChat"
           options={{
             title: "Chat",
-            headerStyle: { backgroundColor: "#252525" },
-            headerTitleStyle: { color: "white" },
+            headerStyle: { backgroundColor: "#363636" },
+            headerTitleStyle: { color: "#FEF4EC" },
+            headerTintColor:'#FEF4EC',
           }}
         >
           {(props) => <SingleChat {...props} messagesObject={messagesObject} />}

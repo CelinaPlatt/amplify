@@ -1,10 +1,6 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  text: {
-    // textAlign: "center",
-    color: 'white',
-  },
   background: {
     backgroundColor: '#181818',
   },
