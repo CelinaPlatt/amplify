@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Text } from 'react-native';
 import styles from './styles';
 import { Card, Title } from 'react-native-paper';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
@@ -7,7 +6,7 @@ import { SearchBar } from 'react-native-elements';
 import fetchUsers from '../../Hooks/fetchUsers';
 import createChatRoom from '../../utils/createChatRoom';
 import getSingleChat from '../../utils/getSingleChat';
-import { Avatar, Divider } from 'react-native-paper';
+import { Avatar, Divider,Text } from 'react-native-paper';
 import { Entypo } from '@expo/vector-icons';
 
 const Chats = ({ navigation, chatArray, usersArray, currUser }) => {

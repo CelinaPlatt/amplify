@@ -23,7 +23,7 @@ const theme = {
   colors: {
     ...DefaultTheme.colors,
     primary: "#e05c10",
-    text: "white",
+    text: "#FEF4EC",
   },
 };
 

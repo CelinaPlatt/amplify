@@ -47,9 +47,7 @@ const ProfilePage = ({ user, setUser, navigation, setIsLoggedIn }) => {
 
           <Button
             style={style.logoutbutton}
-            theme={{ colors: { primary: '#252525' } }}
-            color={'#909090'}
-            mode="outlined"
+            mode="contained"
             onPress={() => {
               logoutHandler(setUser, setIsLoggedIn);
             }}
