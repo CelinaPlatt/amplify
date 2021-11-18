@@ -8,21 +8,22 @@ A user-friendly UI that takes inspiration from the best parts of bigger social m
 
 &ensp;
 
-![](./assets/demo_screenshots/amplify_logo.jpg)
 
-<!-- ![](./assets/demo_screenshots/amplify_highlights.jpg) -->
+![](./assets/demo_screenshots/_logo.png)
 
-![](./assets/demo_screenshots/amplify-geolocation.jpg)
-![](./assets/demo_screenshots/amplify_media.jpg)
-![](./assets/demo_screenshots/amplify_messaging.jpg)
+![](./assets/demo_screenshots/_geolocation.png)
+
+![](./assets/demo_screenshots/_media.png)
+
+![](./assets/demo_screenshots/_messaging.png)
 
 &ensp;
 
 ## Frontend Technologies
 
-![](./assets/demo_screenshots/amplify_frontend.jpg)
+![](./assets/demo_screenshots/_frontend.png)
 &ensp;
 
 ## Backend Technologies
 
-![](./assets/demo_screenshots/amplify_backend.jpg)
+![](./assets/demo_screenshots/_backend.png)
