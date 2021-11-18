@@ -11,10 +11,11 @@ import Chats from "../Chats/Chats";
 
 const Stack = createStackNavigator();
 
-export default function HomeScreen({ navigation, updateMap }) {
+export default function HomeScreen({ navigation, currentUser, chatArray }) {
   const [currentAd, setCurrentAd] = useState({});
   const [otherUser, setOtherUser] = useState("");
-  const { ads, loading, lastLocation } = useMap(updateMap);
+  const { ads, loading, lastLocation } = useMap();
+  // console.log(chatArray, "<<<< CA in homescreen");
 
   if (loading) {
     return (
